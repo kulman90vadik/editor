@@ -1,0 +1,77 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+ul,
+ol {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+address {
+  font-style: normal;
+}
+
+button {
+  padding: 0;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: transparent;
+}
+
+body {
+  font-family: 'Butler', sans-serif;
+  font-size: 17px;
+  line-height: 1.2;
+  font-weight: 400;
+
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+
