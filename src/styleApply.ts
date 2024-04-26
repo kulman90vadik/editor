@@ -19,7 +19,5 @@ export const styleApply = (type: TType, selectedText: string) => {
         formattedText = selectedText
   }
 
-  console.log(formattedText)
-
   return formattedText
 }

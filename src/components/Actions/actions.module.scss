@@ -1,0 +1,35 @@
+
+
+.actions {
+  background-color: rgba(#000, 0.6);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+
+.btn {
+  color: #fff;
+  line-height: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px 4px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+  width: 30px;
+  height: 30px;
+  svg {
+    transition: all 0.3s ease;
+    stroke: #fff;
+  }
+  &:hover {
+    svg {
+      stroke: #000;
+    }
+    background-color: #fff;
+  }
+}

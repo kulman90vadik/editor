@@ -1,7 +1,8 @@
-
-
 {
   "emails": [
-    { "id": "1", "text": "h trh h thhh ththh thhtha title"}
+    {
+      "id": "0",
+      "text": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. At quo voluptatum unde aliquid sapiente consequuntur adipisci inventore fugit."
+    }
   ]
 }

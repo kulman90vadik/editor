@@ -1,2 +1,8 @@
 
-export type TType = 'bold' | 'italic' | 'underline'
+export type TType = string
+
+export type IEmails = {
+  id: number
+  text: string
+}
+

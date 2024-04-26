@@ -1,0 +1,27 @@
+
+.emails {
+  width: 35%;
+  background-color: rgba(#000, 0.3);
+  border-radius: 10px;
+  box-shadow: 0px 0px 18px #818181 ;
+  color: #fff;
+  padding: 20px;
+  @media (max-width: 800px) {
+    width: 100%;
+  }
+}
+
+.item {
+  display: flex;
+  margin-bottom: 11px;
+  p {
+    display: block;
+  }
+  svg {
+    color: #00d8ff;
+    display: block;
+    margin-right: 15px;
+    min-width: 19px;
+    width: 19px;
+  }
+}
