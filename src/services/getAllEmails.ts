@@ -2,11 +2,9 @@ import axios from "axios";
 import { IEmails } from "../types/modules";
 
 
-const URL = 'http://localhost:3000/emails'
-
 export const getAllEmails = async () => {
     try {
-      const { data } = await axios.get<IEmails[]>(URL)
+      const { data } = await axios.get<IEmails[]>(`http://localhost:3000/emails`)
       return data
     }  
     catch (e) {
