@@ -20,7 +20,7 @@ export default function Editor () {
 		queryFn: () =>  getAllEmails()
 	})
 
-	const {mutate, isPending} = useMutation({ // useMutation - для всего кроме GET!
+	const {mutate} = useMutation({ // useMutation - для всего кроме GET!
 		mutationKey: ['send email'],
 		mutationFn: () => postEmail(text, data?.length),
 		onSuccess() { // если всё хорощо прошло то очищаем

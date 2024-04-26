@@ -6,7 +6,7 @@ import parse from 'html-react-parser';
 
 const EmailList = () => {
 
-  const {data, isPending, error} = useQuery({
+  const {data, isPending} = useQuery({
 		queryKey: ['email list'],
 		queryFn: () =>  getAllEmails()
 	})
