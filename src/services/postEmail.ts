@@ -1,7 +1,7 @@
 import axios from "axios";
 
 
-const URL = 'https://editor-zeta-ivory.vercel.app/emails'
+const URL = 'http://localhost:3000/emails'
 
 export const postEmail = async (text: string, id: number | undefined) => {
 
