@@ -3,8 +3,8 @@ import styles from './editor.module.scss'
 import parse from 'html-react-parser';
 import EmailList from '../EmailList/EmailList'
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
-import { postEmail } from '../../services/postEmail'
-import { getAllEmails } from '../../services/getAllEmails'
+import { postEmail } from '../../../public/services/postEmail'
+import { getAllEmails } from '../../../public/services/getAllEmails'
 import { useEditor } from '../../useEditor'
 import Actions from '../Actions/Actions';
 

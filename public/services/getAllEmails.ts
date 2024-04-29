@@ -1,5 +1,5 @@
 import axios from "axios";
-import { IEmails } from "../types/modules";
+import { IEmails } from "../../src/types/modules";
 
 
 export const getAllEmails = async () => {

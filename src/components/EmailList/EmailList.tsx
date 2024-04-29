@@ -1,6 +1,6 @@
 import { useQuery } from '@tanstack/react-query';
 import styles from './emaillist.module.scss'
-import { getAllEmails } from '../../services/getAllEmails';
+import { getAllEmails } from '../../../public/services/getAllEmails';
 import { AtSign } from 'lucide-react';
 import parse from 'html-react-parser';
 
