@@ -1,8 +1,20 @@
 {
   "emails": [
     {
-      "id": 1,
-      "text": "<b>frfrfr</b>"
+      "id": 0,
+      "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, quasi veniam!"
+    },
+    {
+      "text": "<u>lorem</u>",
+      "id": 1
+    },
+    {
+      "text": "<b>uuuu</b>",
+      "id": 2
+    },
+    {
+      "text": "rer",
+      "id": 3
     }
   ]
 }

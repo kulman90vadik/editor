@@ -4,7 +4,7 @@ import { IEmails } from "../types/modules";
 
 export const getAllEmails = async () => {
     try {
-      const { data } = await axios.get<IEmails[]>(`http://localhost:3000/emails`)
+      const { data } = await axios.get<IEmails[]>(`http://localhost:3010/emails`)
       return data
     }  
     catch (e) {
