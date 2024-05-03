@@ -53,6 +53,7 @@ export default function Editor () {
 					value={text}
 					onChange={(e) => setText(e.target.value)}
 					placeholder='Enter Email...'
+					
 				>
 					{text}
 				</textarea>

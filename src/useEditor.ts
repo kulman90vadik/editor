@@ -16,6 +16,7 @@ export function useEditor() {
 
 
 	const applyFormat = (type: TType) => {
+		console.log(type)
 
 		const selectedText = text.substring(selectionStart, selectionEnd) // выделенный текст
     if (!selectedText) return
