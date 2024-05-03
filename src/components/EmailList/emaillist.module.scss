@@ -13,7 +13,10 @@
 
 .item {
   display: flex;
+  align-items: center;
   margin-bottom: 11px;
+  font-size: 25px;
+
   p {
     display: block;
   }

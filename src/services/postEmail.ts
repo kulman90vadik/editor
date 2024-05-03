@@ -3,11 +3,11 @@ import axios from "axios";
 
 // const URL = 'http://localhost:3010/emails'
 
-export const postEmail = async (text: string, id: number | undefined) => {
+export const postEmail = async (comment: string, id: number | undefined) => {
 
     try {
-      const { data } = await axios.post('http://localhost:3010/emails',
-       { text, id })
+      const { data } = await axios.post('https://jsonplaceholder.org/comments',
+       { comment, id })
       return data
     }  
     catch (e) {

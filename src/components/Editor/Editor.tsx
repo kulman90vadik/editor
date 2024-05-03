@@ -2,32 +2,37 @@ import styles from './editor.module.scss'
 
 import parse from 'html-react-parser';
 import EmailList from '../EmailList/EmailList'
-import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
-import { postEmail } from '../../services/postEmail'
-import { getAllEmails } from '../../services/getAllEmails'
 import { useEditor } from '../../useEditor'
 import Actions from '../Actions/Actions';
+import { useState } from 'react';
 
 
 export default function Editor () {
 
 	const {applyFormat, text, setText, updateSelection, refText} = useEditor()
 
-	const queryClient = useQueryClient();
+	// const queryClient = useQueryClient();
 
-	const {data} = useQuery({
-		queryKey: ['email list'],
-		queryFn: () =>  getAllEmails()
-	})
+	// const {data} = useQuery({
+	// 	queryKey: ['email list'],
+	// 	queryFn: () =>  getAllEmails()
+	// })
 
-	const {mutate} = useMutation({ // useMutation - для всего кроме GET!
-		mutationKey: ['send email'],
-		mutationFn: () => postEmail(text, data?.length),
-		onSuccess() { // если всё хорощо прошло то очищаем
-			setText('')
-			queryClient.refetchQueries({queryKey: ['email list']}) // для автоматического обновления данных.
-		}
-	})
+	// const {mutate} = useMutation({ // useMutation - для всего кроме GET!
+	// 	mutationKey: ['send email'],
+	// 	mutationFn: () => postEmail(text, data?.length),
+	// 	onSuccess() { // если всё хорощо прошло то очищаем
+	// 		setText('')
+	// 		queryClient.refetchQueries({queryKey: ['email list']}) // для автоматического обновления данных.
+	// 	}
+	// })
+	const [emailListArr, setEmailListArr] = useState<string[]>([])
+	const emailList = (text:string) => {
+
+		setEmailListArr((prev) => [...prev, text])
+		setText('')
+
+	}
 
 
 	return (
@@ -51,10 +56,10 @@ export default function Editor () {
 				>
 					{text}
 				</textarea>
-				<button disabled={!text} className={styles.send} type='button' onClick={() => mutate()}>Send</button>
+				<button disabled={!text} className={styles.send} type='button' onClick={() => emailList(text)}>Send</button>
 			</div>
 
-			<EmailList />
+			<EmailList emailListArr={emailListArr}/>
 
 		</section>
 	)
