@@ -7,10 +7,7 @@ import {
 	Italic,
 	Underline,
 	Quote,
-	Heading,
-	Heading3,
-	Heading2,
-	Heading1
+	Heading
 } from 'lucide-react'
 
 type Props = {
