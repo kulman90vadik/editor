@@ -1,10 +1,10 @@
 import axios from "axios";
-import { IEmails } from "../types/modules";
+// import { IEmails } from "../types/modules";
 
 
 export const getAllEmails = async () => {
     try {
-      const { data } = await axios.get<IEmails[]>(`https://jsonplaceholder.org/comments`)
+      const { data } = await axios.get(`https://jsonplaceholder.org/comments`)
       return data
     }  
     catch (e) {
