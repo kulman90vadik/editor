@@ -36,6 +36,16 @@
   }
 }
 
+.btnHead {
+  align-items: end;
+  font-size: 19px;
+  span {
+    font-size: 9px;
+    display: block;
+    padding-left: 3px;
+  }
+}
+
 .btnColor {
   position: relative;
 }
